@@ -1,0 +1,124 @@
+{
+    "quotes": [
+      {
+        "id": 1,
+        "thinker": "Albert Einstein",
+        "quote": "La créativité est contagieuse, transmettez-la.",
+        "image": "https://cdn.pixabay.com/photo/2019/01/04/16/38/einstein-3913496_1280.jpg"
+      },
+      {
+        "id": 2,
+        "thinker": "Socrate",
+        "quote": "La seule vraie sagesse est de savoir que vous ne savez rien.",
+        "image": "https://example.com/socrate.jpg"
+      },
+      {
+        "id": 3,
+        "thinker": "Maya Angelou",
+        "quote": "Vous seul êtes assez puissant pour vous donner la permission.",
+        "image": "https://example.com/maya_angelou.jpg"
+      },
+      {
+        "id": 4,
+        "thinker": "Steve Jobs",
+        "quote": "L'innovation distingue un leader d'un suiveur.",
+        "image": "https://example.com/steve_jobs.jpg"
+      },
+      {
+        "id": 5,
+        "thinker": "Confucius",
+        "quote": "L'homme qui déplace une montagne commence par déplacer les petites pierres.",
+        "image": "https://example.com/confucius.jpg"
+      },
+      {
+        "id": 6,
+        "thinker": "Marie Curie",
+        "quote": "Rien dans la vie n'est à craindre, tout est à comprendre.",
+        "image": "https://example.com/marie_curie.jpg"
+      },
+      {
+        "id": 7,
+        "thinker": "Nelson Mandela",
+        "quote": "L'éducation est l'arme la plus puissante que vous pouvez utiliser pour changer le monde.",
+        "image": "https://example.com/nelson_mandela.jpg"
+      },
+      {
+        "id": 8,
+        "thinker": "Aristote",
+        "quote": "L'éducation de l'esprit ne devrait jamais être dissociée de l'éducation du cœur.",
+        "image": "https://example.com/aristote.jpg"
+      },
+      {
+        "id": 9,
+        "thinker": "Ada Lovelace",
+        "quote": "La science du calcul n'est qu'une partie de l'étude des œuvres du Créateur.",
+        "image": "https://example.com/ada_lovelace.jpg"
+      },
+      {
+        "id": 10,
+        "thinker": "Martin Luther King Jr.",
+        "quote": "L'obscurité ne peut pas chasser l'obscurité, seule la lumière le peut. La haine ne peut pas chasser la haine, seul l'amour le peut.",
+        "image": "https://example.com/martin_luther_king_jr.jpg"
+      },
+      {
+        "id": 11,
+        "thinker": "Rosa Parks",
+        "quote": "Le seul moyen de faire un grand travail est d'aimer ce que vous faites.",
+        "image": "https://example.com/rosa_parks.jpg"
+      },
+      {
+        "id": 12,
+        "thinker": "Leonardo da Vinci",
+        "quote": "La simplicité est la sophistication ultime.",
+        "image": "https://example.com/leonardo_da_vinci.jpg"
+      },
+      {
+        "id": 13,
+        "thinker": "Malala Yousafzai",
+        "quote": "Un enfant, un enseignant, un livre, une plume peuvent changer le monde.",
+        "image": "https://example.com/malala_yousafzai.jpg"
+      },
+      {
+        "id": 14,
+        "thinker": "Platon",
+        "quote": "Le début est la partie la plus importante du travail.",
+        "image": "https://example.com/platon.jpg"
+      },
+      {
+        "id": 15,
+        "thinker": "Isaac Newton",
+        "quote": "Ce que nous savons est une goutte d'eau, ce que nous ignorons est l'océan.",
+        "image": "https://example.com/isaac_newton.jpg"
+      },
+      {
+        "id": 16,
+        "thinker": "Hypatia",
+        "quote": "La plus grande de toutes les erreurs est de ne rien faire parce que l'on pense que l'on ne peut rien faire.",
+        "image": "https://example.com/hypatia.jpg"
+      },
+      {
+        "id": 17,
+        "thinker": "Vincent van Gogh",
+        "quote": "La vie est une œuvre d'art, la faire aussi belle que possible.",
+        "image": "https://example.com/vincent_van_gogh.jpg"
+      },
+      {
+        "id": 18,
+        "thinker": "Jane Goodall",
+        "quote": "La plus grande menace pour notre planète est la croyance que quelqu'un d'autre la sauvera.",
+        "image": "https://example.com/jane_goodall.jpg"
+      },
+      {
+        "id": 19,
+        "thinker": "Galileo Galilei",
+        "quote": "E pur si muove. (Et pourtant, elle tourne.)",
+        "image": "https://example.com/galileo_galilei.jpg"
+      },
+      {
+        "id": 20,
+        "thinker": "Helen Keller",
+        "quote": "La vie est soit une aventure audacieuse, soit rien du tout.",
+        "image": "https://example.com/helen_keller.jpg"
+      }
+    ]
+  }

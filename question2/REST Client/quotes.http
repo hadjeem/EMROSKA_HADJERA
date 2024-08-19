@@ -1,0 +1,34 @@
+######### NORMAL OPERATION  ###########
+
+@baseUrl = http://localhost:3000
+
+### Create the manager user
+POST http://localhost:3000/auths/register
+Content-Type: application/json
+
+{
+    "username":"pinkLady",
+    "password":"pinkLady"
+}
+
+### Login the manager user
+# @name user
+POST {{baseUrl}}/auths/login
+Content-Type: application/json
+
+{
+    "username":"pinkLady",
+    "password":"pinkLady"
+}
+
+### Create a quote
+POST {{baseUrl}}/quotes
+Content-Type: application/json
+Authorization: {{user.response.body.token}}
+
+{
+    "quoteId":4,
+    "score":5,
+    "user":"pinkLady"
+}
+
