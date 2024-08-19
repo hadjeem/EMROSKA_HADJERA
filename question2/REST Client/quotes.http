@@ -1,0 +1,98 @@
+### Create the pinkLady user
+POST http://localhost:3000/auths/register
+Content-Type: application/json
+
+{
+    "username":"pinkLady",
+    "password":"pinkLady"
+}
+
+### Login the pinkLady user
+# @name pinkLadyToken
+POST http://localhost:3000/auths/login
+Content-Type: application/json
+
+{
+    "username":"pinkLady",
+    "password":"pinkLady"
+}
+
+### Create the greenMan user
+POST http://localhost:3000/auths/register
+Content-Type: application/json
+
+{
+    "username":"greenMan",
+    "password":"greenMan"
+}
+
+### Login the greenMan user
+# @name greenManToken
+POST http://localhost:3000/auths/login
+Content-Type: application/json
+
+{
+    "username":"greenMan",
+    "password":"greenMan"
+}
+
+
+
+### 1. Create an evaluation with a correct score for user "pinkLady"
+POST http://localhost:3000/quotes
+Content-Type: application/json
+Authorization: {{pinkLadyToken.response.body.token}}
+
+{
+  "quoteId": 1,
+  "score": 8
+}
+
+### 2. Create an evaluation with a correct score for user "greenMan"
+POST http://localhost:3000/quotes
+Content-Type: application/json
+Authorization: {{greenManToken.response.body.token}}
+
+{
+  "quoteId": "2",
+  "score": 7
+}
+
+### 3. Attempt to create an evaluation with an invalid score (outside 0-10) for user "pinkLady"
+POST http://localhost:3000/quotes
+Content-Type: application/json
+Authorization: {{pinkLadyToken.response.body.token}}
+
+{
+  "quoteId": "1",
+  "score": 11
+}
+
+### 4. Attempt to create an evaluation for a non-existent quote for user "pinkLady"
+POST http://localhost:3000/quotes
+Content-Type: application/json
+Authorization: {{pinkLadyToken.response.body.token}}
+
+{
+  "quoteId": "999",
+  "score": 6
+}
+
+### 5. Attempt to create an evaluation for a quote already evaluated by user "greenMan"
+POST http://localhost:3000/quotes
+Content-Type: application/json
+Authorization: {{greenManToken.response.body.token}}
+
+{
+  "quoteId": "2",
+  "score": 9
+}
+
+### 6. Attempt to create an evaluation as an anonymous (non-authenticated) user
+POST http://localhost:3000/quotes
+Content-Type: application/json
+
+{
+  "quoteId": "3",
+  "score": 5
+}
