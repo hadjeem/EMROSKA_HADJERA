@@ -26,6 +26,9 @@ function renderQuoteCarousel() {
   carouselContainer.id = 'quote-carousel';
   main.appendChild(carouselContainer);
 
+  // Retrieve interval from localStorage, default to 5000ms if not set
+  const interval = parseInt(localStorage.getItem('carouselInterval'), 10) || 5000;
+
   fetchQuotes().then(quotes => {
     if (quotes.length === 0) {
       carouselContainer.innerHTML = 'Aucune citation disponible.';
@@ -44,13 +47,13 @@ function renderQuoteCarousel() {
         <p>${quote}</p>
       `;
 
-      currentIndex+=1;
+      currentIndex += 1;
       if (currentIndex >= quotes.length) {
         setTimeout(() => {
           carouselContainer.innerHTML = '<p>Rechargez la page si vous souhaitez réafficher le carrousel des citations !</p>';
-        }, 5000);
+        }, interval);
       } else {
-        setTimeout(showNextQuote, 5000);
+        setTimeout(showNextQuote, interval);
       }
     };
 
